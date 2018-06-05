@@ -11,7 +11,7 @@ function translate(lang, str) {
   // and will be disabled by the time the video is out. To generate your own,
   // go here: https://cloud.google.com/translate/v2/getting_started
   const apiKey =
-    'AIzaSyBN-bwtos8sKU6X84wkrdjtCF7uzng6kgQ'
+    'cjeXGzBSGJOPIkFFAp7g'
 	const url =
     'https://www.googleapis.com' +
     '/language/translate/v2' +
@@ -21,7 +21,7 @@ function translate(lang, str) {
     '&q=' + encodeURIComponent(str)
   return fetch(url)
  		.then(response => response.json())
-	  .then(parsedResponse =>
+	  .then(parsedRe sponse =>
     	parsedResponse
       	.data
         .translations[0]

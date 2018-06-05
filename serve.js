@@ -8,12 +8,12 @@ const util = require('util')
 const parseXML = util.promisify(require('xml2js').parseString)
 
 const fetchAuthor = id =>
-fetch(`https://www.goodreads.com/author/show.xml?id=${id}&key=Rz607gLuIzr1a55wEbl3w `)
+fetch(`https://www.goodreads.com/author/show.xml?id=${id}&key=cjeXGzBSGJOPIkFFAp7g`)
 .then(response => response.text())
 .then(parseXML)
 
 const fetchBook = id =>
-fetch(`https://www.goodreads.com/book/show/${id}.xml?key=Rz607gLuIzr1a55wEbl3w`)
+fetch(`https://www.goodreads.com/book/show/${id}.xml?key=cjeXGzBSGJOPIkFFAp7g`)
   .then(response => response.text())
   .then(parseXML)
 
