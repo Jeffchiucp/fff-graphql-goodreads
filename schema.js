@@ -21,7 +21,7 @@ function translate(lang, str) {
     '&q=' + encodeURIComponent(str)
   return fetch(url)
  		.then(response => response.json())
-	  .then(parsedRe sponse =>
+	  .then(parsedResponse =>
     	parsedResponse
       	.data
         .translations[0]
